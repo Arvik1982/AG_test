@@ -7,7 +7,7 @@ export default async function listPartnersApi(page:number,perPage:number){
           const response = await fetch(`${host}users?page=${page}&per_page=${perPage}`, {
             method: 'GET',
           })
-          if (!response.ok) {
+            if (!response.ok) {
             const answerError = await response.json() 
             console.log(answerError)              
             throw new Error(answerError.error)
