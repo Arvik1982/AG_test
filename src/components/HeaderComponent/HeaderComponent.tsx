@@ -9,6 +9,7 @@ import backMob from '../../img/back_mob.svg';
 import updateAvatar from '../../api/updateAvatar';
 import { useDispatch } from 'react-redux';
 
+
 export default function HeaderComponent({ currentPage, partner }: appPropsType) {
   const [partnerData, setPartnerData] = useState<partnerDataType>({
     avatar: '',

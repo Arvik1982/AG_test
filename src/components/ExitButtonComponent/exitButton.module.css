@@ -7,7 +7,7 @@
     padding: 8px 16px 8px 16px;
     background-color: rgba(81, 38, 137, 1);
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     .block__header_button{
    display: none;}
 }

@@ -79,7 +79,7 @@
 .header__back_mob{
     display: none;
 }
-@media (max-width: 376px) {
+@media (max-width: 375px) {
 
     .content__block_header{
         padding: 5px;
@@ -129,7 +129,7 @@
    
 }
 
-@media (max-width: 426px) {
+@media (max-width: 425px) {
     .content__block_header{
         position: relative;
         padding: 5px;
@@ -229,7 +229,7 @@
     }
 
 }
-@media (max-width: 1400px)  {
+@media (max-width: 1440px) and (min-width: 425px)  {
     .content__block_header{
         position: relative;
         padding: 5px;
@@ -238,8 +238,8 @@
         justify-content: center;
         min-height: 412px;        
         background-color: rgba(81, 38, 137, 1);
-        max-width: 375px;
-        align-content: center;
+        width: 675px;
+        /* align-content: center; */
         flex-wrap: wrap;
         
        }

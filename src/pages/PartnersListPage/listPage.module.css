@@ -106,7 +106,7 @@ margin-top: 25px;
 .grid__el_img_mob{
     display: none;
 }
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .content__block{
         
        display: flex;    
@@ -126,7 +126,7 @@ margin-top: 25px;
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 425px) {
     .content__block{        
        display: flex;    
        flex-direction: column;
@@ -147,12 +147,13 @@ margin-top: 25px;
     }
 }
 
-@media (max-width: 1024px) and (min-width:640px){
+@media (max-width: 1440px) and (min-width:425px) {
 
     .content__block{        
        display: flex;    
        flex-direction: column;
        width: 768px;
+       align-items: center;
        
         
     }
