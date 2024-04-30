@@ -1,0 +1,122 @@
+.content__block{
+    display: flex;    
+    flex-direction: column;
+    width: 1440px;
+}
+.content__block_info{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+.block__info_description{
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    width:630px;   
+    min-height: 396px; 
+    gap: 0px;
+    opacity: 0px;
+}
+.block__info_contacts{
+width: 188px;
+height: 72px;
+gap: 24px;
+opacity: 0px;
+
+}
+.block__info_contacts{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+  
+}
+.info__contacts_phone{
+    display: flex;
+    gap:5px;
+}
+.info__contacts_mail{
+    display: flex;
+    gap:5px;
+}
+
+
+
+@media (max-width: 426px) {
+
+    .content__block{
+        display: flex;    
+        flex-direction: column;
+        max-width: 375px;
+    }
+
+    .content__block_info{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: flex-start
+    }
+    .block__info_description{
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 400;
+        max-width:375px; 
+        Padding: 0px 16px 0px 16px; 
+        box-sizing: border-box; 
+        min-height: 704px; 
+        gap: 0px;
+        opacity: 0px;
+        /* border: solid 1px; */
+    }
+    .block__info_contacts{
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+}
+@media (max-width: 1440px) {
+
+    .content__block{
+        display: flex;    
+        flex-direction: column;
+        max-width: 375px;
+    }
+
+    .content__block_info{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: flex-start
+    }
+    .block__info_description{
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 400;
+        max-width:375px; 
+        Padding: 0px 16px 0px 16px; 
+        box-sizing: border-box; 
+        min-height: 704px; 
+        gap: 0px;
+        opacity: 0px;
+        /* border: solid 1px; */
+    }
+    .block__info_contacts{
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+}

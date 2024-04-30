@@ -1,0 +1,13 @@
+.block__header_button{
+    /* margin-top: 30px; */
+    width: 81px;
+    height: 38px;
+    border: solid 1px white;
+    color:rgba(248, 248, 248, 1);
+    padding: 8px 16px 8px 16px;
+    background-color: rgba(81, 38, 137, 1);
+}
+@media (max-width: 1400px) {
+    .block__header_button{
+   display: none;}
+}
