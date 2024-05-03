@@ -29,7 +29,7 @@ export default function RegistrationPage() {
   const regHandleClick = () => {
     if (userPassword1 !== userPassword2) {
       !userPassword2 ? setRegError({ message: 'Подтвердите пароль' }) : '';
-      return;
+      
     } else {
       registrationApi(userMail, userPassword1, dispatch)
         .then(() => {
