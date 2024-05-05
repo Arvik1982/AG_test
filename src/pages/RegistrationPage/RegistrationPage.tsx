@@ -28,16 +28,18 @@ export default function RegistrationPage() {
 
   const regHandleClick = () => {
     if (userPassword1 !== userPassword2) {
-      !userPassword2 ? setRegError({ message: 'Подтвердите пароль' }) : '';
+      !userPassword2 ? setRegError({ message: 'Подтвердите пароль' }) :''
       
     } else {
+      userPassword1.trim().length===0?setRegError({ message: 'введены некорректные данные ' }):
       registrationApi(userMail, userPassword1, dispatch)
         .then(() => {
           navigate('/partners');
         })
         .catch((err): void => {
           console.log(err);
-        });
+        })
+        
     }
   };
 
@@ -66,10 +68,15 @@ export default function RegistrationPage() {
       >
         {localToken ? 'Войти' : 'Зарегистрироваться'}
       </button>
+      <div style={{position:'relative'}}>
       {regError && (
-        <span style={{ color: 'red', position: 'absolute', top: '79%', fontSize: '15px' }}>{regError.message}</span>
+        <span style={{ color: 'red', fontSize: '15px' }}>{regError.message}</span>
+        
       )}
+      </div>
+   
       {appError && <h1 style={{ fontSize: '16px', color: 'red', alignSelf: 'center' }}>{appError}</h1>}
+      
     </div>
   );
 }
