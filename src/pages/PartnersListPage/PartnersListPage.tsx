@@ -106,18 +106,14 @@ export default function PartnersListPage({ currentPage, setCurrentPage }: appPro
       <div className={styles.content__block_footer}>
         <div className={styles.pagination}>
           <div
-            onClick={() => {
-              handlePaginatePrev();
-            }}
+            onClick={handlePaginatePrev}
             className={styles.pagination__turn}
           >
             {'<<'}
           </div>
           <div className={styles.pagination_buttons}>--{page}--</div>
           <div
-            onClick={() => {
-              handlePaginateNext();
-            }}
+            onClick={handlePaginateNext}
             className={styles.pagination__turn}
           >
             {'>>'}
@@ -126,9 +122,7 @@ export default function PartnersListPage({ currentPage, setCurrentPage }: appPro
         {message && <span style={{ color: 'green' }}>{message}</span>}
         <div className={styles.footer__button_block}>
           <button
-            onClick={() => {
-              handleClickMore();
-            }}
+            onClick={handleClickMore}
             className={styles.block__footer_button}
           >
             Показать еще
