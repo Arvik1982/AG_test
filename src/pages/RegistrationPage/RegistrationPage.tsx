@@ -18,7 +18,7 @@ export default function RegistrationPage() {
   const userPassword2 = useSelector((state: IRootStoreType) => state.regRedux.password2);
   const appError = useSelector((state: IRootStoreType) => state.appRedux.appError);
 
-  const [inputOk, setInputOk] = useState<boolean>(!userMail ? true : validMail.test(userMail) ? true : false);
+  const [inputOk, setInputOk] = useState<boolean>(!userMail ? true : validMail.test(userMail));
 
   const [regError, setRegError] = useState<errorType>({ message: '' });
 
