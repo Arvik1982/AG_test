@@ -1,4 +1,4 @@
-#  Тестовое задание на позицию «Frontend-разработчик стажер на React»
+#  Тестовое задание на позицию «Frontend-разработчик на React»
 
 ## Разработчик:
 phone.kulikovarseniy@gmail.com
